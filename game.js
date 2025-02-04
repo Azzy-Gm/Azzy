@@ -154,7 +154,4 @@ var Snake = (function() {
   };
 
 })();
-document.getElementById("playButton").addEventListener("click", function() {
   Snake.start(8);
-    document.getElementById("playButton").style.display = "none"; // Sembunyikan tombol setelah mulai
-});
