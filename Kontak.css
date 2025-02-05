@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+  color: white;
+}
+.judul {
+  text-align: center;
+}
+.loli {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  padding: 20px;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.malaz {
+  text-align: center;
+}
+@media (max-width: 768px) { /* Untuk layar kecil (mobile) */
+  .loli {
+    min-height: auto; /* Menghindari ruang kosong berlebih */
+    padding: 5px;
+  }
+
+  img {
+    max-width: 100%; /* Pastikan gambar tidak melebihi layar */
+  }
+}
+
+@media (min-width: 1024px) { /* Untuk layar besar (PC) */
+  .loli {
+    min-height: 70vh; /* Beri ruang lebih di layar besar */
+  }
+}
