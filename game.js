@@ -4,8 +4,8 @@ var Snake = (function() {
   var fixedTail = true;
   var intervalID;
 
-  var tileCount = 30;
-  var gridSize = 100 / tileCount;
+  var tileCount = 10;
+  var gridSize = 400 / tileCount;
 
   const INITIAL_PLAYER = { x: Math.floor(tileCount / 2), y: Math.floor(tileCount / 2) };
 
