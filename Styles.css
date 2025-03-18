@@ -44,16 +44,6 @@ nav {
     color: blue;
 }
 
-canvas { 
-  display: block; 
-  
-  margin: auto; 
-  background: #229; 
-  width: 40%;
-  min-height: 20vh;
-  padding: 20px;
-}
-
 .game {
   text-align: left;
 }
