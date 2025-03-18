@@ -40,10 +40,6 @@ nav {
     transition: color 0.3s;
 }
 
-.menu a:hover {
-    color: blue;
-}
-
 .game {
   text-align: left;
 }
