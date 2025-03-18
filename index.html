@@ -25,6 +25,16 @@
         <h1>Snake Game</h1>
         <h3>by Azzy</h3>
     <canvas id="gc" width="400" height="400"></canvas>
-    <script src="game.js"></script>
+    <script>
+        window.setTimeout("waktu()", 1000);
+ 
+	function waktu() {
+		var waktu = new Date();
+		setTimeout("waktu()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+    </script>
 </body>
 </html>
