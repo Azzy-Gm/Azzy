@@ -10,6 +10,12 @@ body {
     
 }
 
+.clock {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+        }
+
 .simbol {
   width: 150px;
   height: auto;
