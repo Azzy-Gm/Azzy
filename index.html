@@ -32,5 +32,4 @@
             const seconds = now.getSeconds().toString().padStart(2, '0');
             document.getElementById("clock").textContent = `${hours}:${minutes}:${seconds}`;
         }
-
         setInterval(updateClock, 1000);
