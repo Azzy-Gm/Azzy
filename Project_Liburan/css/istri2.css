@@ -1,0 +1,96 @@
+/* GENERAL */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* HOME CARD */
+.home-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    max-width: 700px;
+}
+
+/* VIDEO CARD (LIST VIDEO) */
+.video-card {
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
+}
+
+.video-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #000;
+}
+
+.video-title {
+    font-weight: 600;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+    .video-thumb {
+        height: 150px;
+    }
+}
+
+/* SIDEBAR VIDEO */
+.video-side {
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.video-side:hover {
+    background: rgba(0,0,0,.04);
+}
+
+.side-thumb {
+    width: 140px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #000;
+}
+
+.side-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.series-card {
+    transition: transform .2s, box-shadow .2s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.series-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.series-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+.list-group-item:hover {
+    background: #f8f9fa;
+    transform: scale(1.01);
+    transition: .15s;
+}
