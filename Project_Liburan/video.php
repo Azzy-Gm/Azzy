@@ -99,7 +99,7 @@ $pages = ceil($total / $limit);
 
 <?php while ($v = mysqli_fetch_assoc($q)) { ?>
 <div class="col-lg-3 col-md-4 col-sm-6">
-<a href="judul.php?id=<?= (int)$v['judul_id']; ?>" class="text-decoration-none text-dark">
+<a href="nontonnya.php?id=<?= (int)$v['id']; ?>" class="text-decoration-none text-dark">
     <div class="video-card">
         <video class="video-thumb" muted preload="metadata" playsinline>
             <source src="vid/<?= $v['folder_judul']; ?>/<?= $v['filename']; ?>" type="video/mp4">
