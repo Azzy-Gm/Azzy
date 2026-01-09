@@ -65,7 +65,7 @@ $eps = mysqli_query($conn,
             <div>
                 <strong>Episode <?= $e['episode']; ?></strong><br>
                 <span class="text-muted small">
-                    <?= htmlspecialchars($e['judul']); ?>
+                    <?= htmlspecialchars($e['filename']); ?>
                 </span>
             </div>
 
