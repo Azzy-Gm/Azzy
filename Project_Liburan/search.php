@@ -8,19 +8,19 @@ $result  = null;
 if (isset($_GET['q']) && $_GET['q'] !== '') {
     $keyword = mysqli_real_escape_string($conn, $_GET['q']);
 
-    $result = mysqli_query($conn, "
-        SELECT
-            v.id,
-            v.filename,
-            v.folder_judul,
-            v.judul AS judul_video,
-            j.judul AS judul_film
-        FROM videos v
-        JOIN judul j ON v.judul_id = j.id
-        WHERE v.judul LIKE '%$keyword%'
-           OR j.judul LIKE '%$keyword%'
-        ORDER BY j.judul ASC, v.episode ASC
-    ");
+   $result = mysqli_query($conn, "
+    SELECT
+        v.id,
+        v.filename,
+        v.judul AS judul_video,
+        j.folder_judul,
+        j.judul AS judul_film
+    FROM videos v
+    JOIN judul j ON v.judul_id = j.id
+    WHERE v.judul LIKE '%$keyword%'
+       OR j.judul LIKE '%$keyword%'
+    ORDER BY j.judul ASC, v.episode ASC
+");
 }
 ?>
 <!DOCTYPE html>
@@ -93,10 +93,10 @@ if (isset($_GET['q']) && $_GET['q'] !== '') {
             <a href="nontonnya.php?id=<?= $v['id']; ?>" class="text-decoration-none text-dark">
                 <div class="video-card">
 
-                    <video class="video-thumb" muted preload="metadata">
+                    <video class="video-thumb" muted preload="metadata" playsinline>
                         <source src="vid/<?= htmlspecialchars($v['folder_judul']); ?>/<?= htmlspecialchars($v['filename']); ?>" type="video/mp4">
                     </video>
-
+                    
                     <div class="video-title mt-2">
                         <?= htmlspecialchars($v['judul_film']); ?><br>
                         <small class="text-muted">
