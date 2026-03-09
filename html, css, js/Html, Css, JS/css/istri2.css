@@ -1,0 +1,184 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}   
+
+body {
+    background-color: lightgrey;
+}
+
+.navbar {
+    background-color: grey;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li a:hover{
+    color: blue;
+}
+
+.logo img {
+   margin: 0 20px;
+   width: 50px;
+   height: auto;
+}
+
+
+
+
+/*Wife*/
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.t1 {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.t1dan2 {
+    width: 50%;
+    height: auto;
+    background: wheat;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.t1dan2 h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+} 
+
+.t1dan2 p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: black;
+}
+
+.t1dan2 button {
+    padding: 12px 25px;
+    border: none;
+    background-color: lightcoral;
+    color: green;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.t1dan2 button:hover{
+    background-color: black;
+}
+
+.wife {
+    width: 40%;
+}
+
+.wife img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+
+
+}
+
+
+/*Mine*/
+.container2 {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.t2 {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.t2dan1 {
+    width: 50%;
+    height: auto;
+    background: wheat;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+    border-radius: 40px;
+
+}
+
+.t2dan1 h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+} 
+
+.t2dan1 p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: black;
+}
+
+.t2dan1 button {
+    padding: 12px 25px;
+    border: none;
+    background-color: lightcoral;
+    color: green;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.t2dan1 button:hover{
+    background-color: black;
+}
+
+.mine {
+    width: 40%;
+}
+
+.mine img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 1);
+}
